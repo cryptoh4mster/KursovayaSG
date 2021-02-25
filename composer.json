@@ -1,0 +1,9 @@
+{
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.6",
+        "barryvdh/laravel-debugbar": "^3.4"
+    },
+    "require": {
+        "filp/whoops": "^2.9"
+    }
+}

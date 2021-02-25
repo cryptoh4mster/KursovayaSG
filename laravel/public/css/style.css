@@ -1,0 +1,870 @@
+body {
+    background: #FFF;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+#container {
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.bg-image{
+    background-image: url("../img/mainAirPlane.jpeg");
+    width: 100%;
+    height: 674px;
+    background-size: cover;
+
+}
+#contact {
+    width: 100%;
+    height: 140px;
+}
+
+#logo {
+    float: left;
+    width: 20%;
+    height: 140px;
+}
+
+.exmpl {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exmpl img {
+    height: 100%;
+    width: auto;
+}
+
+.contact-info {
+    float: left;
+    width: 33%;
+    height: 120px;
+    padding-top: 5px;
+    margin-left: -40px;
+}
+
+.contact-info   p {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 19px;
+}
+
+#network {
+    float: left;
+    width: 30%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+#login {
+    float: left;
+    width: 20%;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+
+#login a {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#login a:hover {
+    background-color: #c5a689;
+}
+
+#navigation {
+    width: 100%;
+    height: 70px;
+    background: #9cbaff;
+    position: relative;
+}
+
+.emptyy {
+    width: 15%;
+    height: 70px;
+    float: left;
+}
+
+#center-navigation {
+    width: 70%;
+    height: 70px;
+    float: left;
+    padding-top: 15px;
+}
+
+#center-navigation ul li a {
+    color: #000000;
+}
+
+#center-navigation ul li a:hover {
+    color: #6c5b4c;
+}
+
+#center-navigation > ul > li > a.active {
+    margin-top: -15px;
+    padding-top: 23px;
+    height: 70px;
+    background: #e7d4bc;
+    color: #6c5b4c;
+}
+
+#center {
+    width: 100%;
+}
+
+#center-img {
+    width: 100%;
+    height: 575px;
+
+}
+
+.center-room {
+    width: 75%;
+    margin: auto;
+}
+
+#room-block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#type_room {
+    width: 100%;
+    background: #c0ddf6;
+}
+
+#clear {
+    clear: both;
+}
+
+#footer {
+    width: 100%;
+    height: 270px;
+    background-color: #9cbaff;
+}
+
+.footer-contact {
+    float: left;
+    width: 30%;
+    height: 270px;
+    padding-top: 40px;
+
+}
+
+.footer-place {
+    padding-top: 15px;
+    float: left;
+    width: 40%;
+    height: 270px;
+}
+
+.contact {
+    padding-left: 25px;
+    text-align: left;
+    font-weight: bold;
+    color: #ab8765;
+    font-size: 20px;
+}
+
+.name-contact {
+    text-align: left;
+    padding-left: 25px;
+    color: #ab8765;
+}
+
+.param-contact {
+    text-align: left;
+    padding-left: 25px;
+    margin-top: -15px;
+}
+
+#table-serv {
+    width: 85%;
+    margin: auto;
+    border: 1px solid lightgray;
+}
+
+#add-button {
+    width: 85%;
+    margin: auto;
+}
+
+#add-button-b {
+    width: 170px;
+    margin-right: 950px;
+    margin-bottom: 20px;
+}
+
+#button-func {
+    height: 35px;
+    padding: 0 10px;
+}
+
+#text-func {
+    padding: 17px 0;
+}
+
+#reserv button {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#reserv button:hover {
+    background-color: #c5a689;
+}
+
+#query a {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#query a:hover {
+    background-color: #c5a689;
+}
+
+#plus a {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#plus a:hover {
+    background-color: #c5a689;
+}
+
+#reservation button {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#reservation button:hover {
+    background-color: #c5a689;
+}
+
+
+#client_add {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-left: -725px;
+    margin-top: -10px;
+}
+
+#client_add:hover {
+    background-color: #c5a689;
+}
+
+#table-client {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+#table-client thead {
+    background: #e7d4bc;
+}
+
+#client_tr {
+    background: #ffffff;
+}
+
+#client_tr:hover {
+    background: #fefaf6;
+}
+
+#client_tr button {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#client_tr button:hover {
+    background-color: #c5a689;
+}
+
+#client_add_button button {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 25px;
+}
+
+#client_add_button button:hover {
+    background-color: #c5a689;
+}
+
+#client_add_button a {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 25px;
+}
+
+#client_add_button a:hover {
+    background-color: #c5a689;
+}
+
+
+/* Service */
+#btn_modal_window_addserv {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#btn_modal_window_addserv:hover {
+    background-color: #c5a689;
+}
+
+#modal_serv_add {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_serv_add:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_editserv {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#btn_modal_window_editserv:hover {
+    background-color: #c5a689;
+}
+
+#modal_serv_edit {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_serv_edit:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_deleteserv {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#btn_modal_window_deleteserv:hover {
+    background-color: #c5a689;
+}
+
+#modal_serv_delete {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_serv_delete:hover {
+    background-color: #c5a689;
+}
+
+.modal .modal_content a {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+.modal .modal_content a:hover {
+    background-color: #c5a689;
+}
+
+
+/* Room */
+#btn_modal_window_addtype {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 10px;
+}
+
+#btn_modal_window_addtype:hover {
+    background-color: #c5a689;
+}
+
+#modal_type {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_type:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_edittype {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 10px;
+}
+
+#btn_modal_window_edittype:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_deletetype {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 10px;
+}
+
+#btn_modal_window_deletetype:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_addroom {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 10px;
+}
+
+#btn_modal_window_addroom:hover {
+    background-color: #c5a689;
+}
+
+#modal_room_edit {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_room_edit:hover {
+    background-color: #c5a689;
+}
+
+#modal_room_delete {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_room_delete:hover {
+    background-color: #c5a689;
+}
+
+#modal_room {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_room:hover {
+    background-color: #c5a689;
+}
+
+
+/* Client */
+#modal_deleteclient{
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-bottom: 15px;
+}
+
+#modal_deleteclient:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_editroom {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#btn_modal_window_editroom:hover {
+    background-color: #c5a689;
+}
+
+#btn_modal_window_deleteroom {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+}
+
+#btn_modal_window_deleteroom:hover {
+    background-color: #c5a689;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /*  max-width: 1000px;*/
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 9% auto;
+    padding: 20px;
+    border: 2px solid #c5a689;
+    width: 50%;
+    z-index: 99999;
+}
+
+.modal .modal_content .close_modal_window_addserv {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window_addserv:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_editserv {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window_editserv:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_deleteserv {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window_deleteserv:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_addtype {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window_addtype:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_addroom {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .modal_content .close_modal_window_addroom:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_editroom {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .modal_content .close_modal_window_editroom:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_deleteroom {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .modal_content .close_modal_window_deleteroom:hover {
+    color: #ab8765;
+}
+
+.modal .modal_content .close_modal_window_deleteclient {
+    color: #c5a689;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window_deleteclient:hover {
+    color: #ab8765;
+}
+
+#login_button {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-left: -73px;
+}
+
+#login_button:hover {
+    background-color: #c5a689;
+}
+
+#register_a {
+    color: #000000;
+}
+
+#register_a:hover {
+    color: #c5a689;
+}
+
+#register_button {
+    background-color: #f5eee8;
+    color: #000000;
+    border-color: #c5a689;
+    margin-left: -108px;
+}
+
+#register_button:hover {
+    background-color: #c5a689;
+}
+
+.flight_form {
+    background: #FFFFFF; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 5px; /* Уголки */
+    border-style: solid;
+    border-color: #1d68a7;
+    margin: 50px 250px;
+}
+
+.flight_row {
+    display:flex;
+    height:100px;
+
+}
+.flight_col{
+    width:33%;
+    text-align:center;
+}
+.flight_deletebtn{
+    width:20px;
+    height:20px;
+}
+
+.client_form{
+    background: #FFFFFF; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 5px; /* Уголки */
+    border-style: solid;
+    border-color: #1d68a7;
+    margin: 20px 200px;
+}
+
+.client_row{
+    display:flex;
+    height:40px;
+}
+.client_col{
+    width:33%;
+    text-align:center;
+}
+
+.service_form{
+    background: #FFFFFF; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 5px; /* Уголки */
+    margin: 20px 200px;
+}
+.service_row{
+    display:flex;
+    height:300px;
+}
+.service_col{
+    margin-right:200px;
+}
+
+.reserve-search_form{
+    padding:100px 320px;
+}
+.reserve-search_row{
+    margin-top:100px;
+    display:flex;
+    height:300px;
+}
+.reserve-search_col{
+    background-color: #FFFFFF;
+    margin-right:100px;
+    width:150px;
+    height:50px;
+}
+
+input[type=text]{
+    width:150px;
+    height:50px;
+}
+
+input[type=date]{
+    width:200px;
+    height:50px;
+}
+input.icon1{
+    background: url("../img/fromlogo.png") no-repeat center left;
+    padding-left:40px;
+}
+input.icon2{
+    background: url("../img/tologo.png") no-repeat center left;
+    padding-left:40px;
+}
+input.icon3{
+    background: url("../img/date.png") no-repeat center left;
+    padding-left:40px;
+}
+
+.reserve-form{
+    background: #FFFFFF; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 5px; /* Уголки */
+    border-style: solid;
+    border-color: #1d68a7;
+    margin: 50px 250px;
+}
+.reserve-row{
+
+
+}
+.reserve-col{
+    vertical-align: top;
+    display: inline-block;
+    width:300px;
+    height:300px;
+    text-align:center;
+}
