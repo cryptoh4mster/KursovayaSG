@@ -25,6 +25,7 @@
             <p>{{$cl->phone_client}}</p>
         </div>
         <div class="client_col">
+            ID рейсов:
             @foreach($reserve as $rs)
                 @if ($rs->client_id==$cl->id_client)
                     {{$rs->flight_id}}

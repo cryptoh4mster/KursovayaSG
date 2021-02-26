@@ -18,9 +18,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/clients', 'MainController@client')->name('clients');
 
 });
+Route::post('/service/ajax', 'MainController@service_ajax')->name('service.ajax');
 Route::post('/clientAdd', 'MainController@clientAdd')->name('clientAdd');
 Route::post('/clientDelete/{id}', 'MainController@clientDelete')->name('clientDelete');
 Route::post('/clientEdit/{id}', 'MainController@clientEdit')->name('clientEdit');
+Route::post('/serviceDelete/{id}', 'MainController@serviceDelete')->name('serviceDelete');
+Route::post('/serviceEdit/{id}', 'MainController@serviceEdit')->name('serviceEdit');
 Route::post('/flightAdd', 'MainController@flightAdd')->name('flightAdd');
 Route::post('/flightDelete/{id}', 'MainController@flightDelete')->name('flightDelete');
 Route::post('/flightEdit/{id}', 'MainController@flightEdit')->name('flightEdit');
@@ -28,9 +31,11 @@ Route::post('/flightFinding', 'MainController@flightFinding')->name('flightFindi
 Route::post('/accessReserve', 'MainController@reservationProcess')->name('reservationProcess');
 Route::post('/accessFlightEdit','MainController@flightEditProcess')->name('flightEditProcess'); //ТЕСТ
 Route::post('/accessClientEdit', 'MainController@clientEditProcess')->name('clientEditProcess');
+Route::post('/accessServiceEdit', 'MainController@serviceEditProcess')->name('serviceEditProcess');
 Route::get('/home', 'MainController@home')->name('home');
 //Route::get('/flightFinding', 'MainController@flightFinding')->name('flightFinding');
 Route::get('/flights', 'MainController@flight')->name('flights');
+Route::get('/cabinet/{id}', 'MainController@cabinet')->name('cabinet');
 Route::get('/services', 'MainController@service')->name('services');
 Route::get('/reserves/{id}', 'MainController@reserve')->name('reserves');
 Route::post('/client/ajax', 'MainController@client_ajax')->name('client.ajax');

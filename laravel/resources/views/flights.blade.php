@@ -18,33 +18,29 @@
             <div class="col-3">
                 <input type="text" name="number_flight" id="number_flight" class="form-control" style=" width: 80%; border-color: #c5a689; height:38px"><br>
             </div>
+            <label class="col-3 col-form-label">Время посадки</label>
+            <div class="col-3">
+                <input type="datetime-local" name="landing_time" id="landing_time" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
+            </div>
             <label class="col-3 col-form-label">Название компании</label>
             <div class="col-3">
                 <input type="text" name="company_name" id="company_name" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
+            </div>
+            <label class="col-3 col-form-label">Время вылета</label>
+            <div class="col-3">
+                <input type="datetime-local" name="departure_time" id="departure_time" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
             </div>
             <label class="col-3 col-form-label" >Откуда</label>
             <div class="col-3">
                 <input type="text" name="way_from" id="way_from" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
             </div>
-
-            <label class="col-3 col-form-label" >Куда</label>
-            <div class="col-3">
-                <input type="text" name="way_to" id="way_to" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
-            </div>
-
-            <label class="col-3 col-form-label">Время посадки</label>
-            <div class="col-3">
-                <input type="datetime-local" name="landing_time" id="landing_time" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
-            </div>
-
-            <label class="col-3 col-form-label">Время вылета</label>
-            <div class="col-3">
-                <input type="datetime-local" name="departure_time" id="departure_time" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
-            </div>
-
             <label class="col-3 col-form-label">Время прилета</label>
             <div class="col-3">
                 <input type="datetime-local" name="arrival_time" id="arrival_time" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
+            </div>
+            <label class="col-3 col-form-label" >Куда</label>
+            <div class="col-3">
+                <input type="text" name="way_to" id="way_to" class="form-control" style=" width: 80%; border-color: #c5a689;height:38px"><br>
             </div>
 
             <label class="col-3 col-form-label">Цена</label>

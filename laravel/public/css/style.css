@@ -5,7 +5,6 @@ body {
     font-size: 14px;
 
 }
-
 #container {
     margin: auto auto;
     text-align: center;
@@ -43,7 +42,7 @@ body {
 
 .contact-info {
     float: left;
-    width: 33%;
+    width: 40%;
     height: 120px;
     padding-top: 5px;
     margin-left: -40px;
@@ -58,7 +57,7 @@ body {
 
 #network {
     float: left;
-    width: 30%;
+    width: 23%;
     height: 60px;
     margin-top: 30px;
 }
@@ -119,6 +118,7 @@ body {
 
 #center {
     width: 100%;
+    min-height:300px;
 }
 
 #center-img {
@@ -150,6 +150,7 @@ body {
     width: 100%;
     height: 270px;
     background-color: #9cbaff;
+
 }
 
 .footer-contact {
@@ -321,132 +322,9 @@ body {
 
 
 /* Service */
-#btn_modal_window_addserv {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-}
-
-#btn_modal_window_addserv:hover {
-    background-color: #c5a689;
-}
-
-#modal_serv_add {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 15px;
-}
-
-#modal_serv_add:hover {
-    background-color: #c5a689;
-}
-
-#btn_modal_window_editserv {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-}
-
-#btn_modal_window_editserv:hover {
-    background-color: #c5a689;
-}
-
-#modal_serv_edit {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 15px;
-}
-
-#modal_serv_edit:hover {
-    background-color: #c5a689;
-}
-
-#btn_modal_window_deleteserv {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-}
-
-#btn_modal_window_deleteserv:hover {
-    background-color: #c5a689;
-}
-
-#modal_serv_delete {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 15px;
-}
-
-#modal_serv_delete:hover {
-    background-color: #c5a689;
-}
-
-.modal .modal_content a {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 15px;
-}
-
-.modal .modal_content a:hover {
-    background-color: #c5a689;
-}
 
 
-/* Room */
-#btn_modal_window_addtype {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 10px;
-}
 
-#btn_modal_window_addtype:hover {
-    background-color: #c5a689;
-}
-
-#modal_type {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 15px;
-}
-
-#modal_type:hover {
-    background-color: #c5a689;
-}
-
-#btn_modal_window_edittype {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 10px;
-}
-
-#btn_modal_window_edittype:hover {
-    background-color: #c5a689;
-}
-
-#btn_modal_window_deletetype {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 10px;
-}
-
-#btn_modal_window_deletetype:hover {
-    background-color: #c5a689;
-}
-
-#btn_modal_window_addroom {
-    background-color: #f5eee8;
-    color: #000000;
-    border-color: #c5a689;
-    margin-bottom: 10px;
-}
 
 #btn_modal_window_addroom:hover {
     background-color: #c5a689;
@@ -809,6 +687,7 @@ body {
 }
 .service_col{
     margin-right:200px;
+
 }
 
 .reserve-search_form{

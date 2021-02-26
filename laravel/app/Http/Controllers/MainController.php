@@ -9,11 +9,24 @@ use App\ReserveService;
 use App\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\UploadedFile;
 
 class MainController extends Controller
 {
     public function home() {
         return view('home');
+    }
+    public function cabinet($id) {
+        //$client=Client::get()->where('id_client',$id);
+        //$reserve=DB::select("SELECT * FROM reserves WHERE reserves.client_id='$id'");
+        //$flight=DB::select("SELECT * FROM flights WHERE flights.id_flight='$reserve.'")
+
+        $query=DB::select("SELECT * FROM reserves
+                            LEFT JOIN flights
+                            ON reserves.flight_id=flights.id_flight
+                            WHERE reserves.client_id='$id'");
+        return view('cabinet',compact('query'));
+
     }
 
     public function flight() {
@@ -43,7 +56,11 @@ class MainController extends Controller
                             WHERE flights.way_from='$requestFrom'
                             && flights.way_to='$requestTo'
                             && flights.departure_time <= '$requestWhen'");
-        return view('flightFinding',compact('flight'));
+        if($flight==null)
+            $query="К сожалению рейсов по вашим условиям не найдено";
+        else
+            $query="Найденные рейсы:";
+        return view('flightFinding',compact('flight','query'));
     }
 
     public function reserve($id) {
@@ -174,5 +191,38 @@ class MainController extends Controller
         $client->save();
         $query="Вы успешно отредактировали данные клиента";
         return view('accessClientEdit',compact('query'));
+    }
+    public function service_ajax(Request $request){
+        $serviceAdd=new Service();
+        $serviceAdd->name_service=$request->name_service;
+        $serviceAdd->description_service=$request->description_service;
+        $serviceAdd->cost_service=$request->cost_service;
+        $serviceAdd->url='img/'.$request->url;
+        $serviceAdd->save();
+        $service=new Service();
+        return view('servicelist', ['service'=>$service->all()]);
+    }
+    public function serviceEdit($id){
+        $service=Service::get()->where('id_service',$id);
+        return view('serviceEdit',compact('service'));
+    }
+    public function serviceDelete($id){
+        $service = Service::where('id_service', $id)->first();
+        $service->delete();
+        $service=new Service();
+        return redirect()->route('services',['service'=>$service->all()]);
+    }
+    public function serviceEditProcess(Request $request){
+        $service = Service::where('id_service', $request->id_service)->first();
+        $service->name_service=$request->name_service;
+        $service->description_service=$request->description_service;
+        $service->cost_service=$request->cost_service;
+        $service->url=$request->url1;
+        $service->save();
+        $query="Вы успешно отредактировали услугу";
+        return view('accessServiceEdit',compact('query'));
+    }
+    public function serviceDeleteProcess($id){
+
     }
 }
