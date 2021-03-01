@@ -56,7 +56,7 @@ class MainController extends Controller
         $flight=DB::select("SELECT * FROM flights
                             WHERE flights.way_from='$requestFrom'
                             && flights.way_to='$requestTo'
-                            && flights.departure_time <= '$requestWhen'");
+                            && flights.departure_time >= '$requestWhen'");
         if($flight==null)
             $query="К сожалению рейсов по вашим условиям не найдено";
         else
