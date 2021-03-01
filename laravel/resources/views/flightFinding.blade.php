@@ -42,7 +42,9 @@
                         <p>{{$hh}} ч. {{$mm}} мин.</p>
                     </div>
                     <div class="flight_col">
+                        @if(Auth::check())
                         <a href="{{route('reserves', ['id'=>$fl->id_flight])}}" class="btn btn-outline-secondary" style="margin-bottom:5px;">Забронировать</a>
+                        @endif
                         <p>Стоимость: {{$fl->cost}} руб.</p>
                         <p>Осталось билетов: {{$fl->ticketsAmount}} шт.</p>
                     </div>

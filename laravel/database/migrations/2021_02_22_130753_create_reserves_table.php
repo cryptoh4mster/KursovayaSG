@@ -27,7 +27,7 @@ class CreateReservesTable extends Migration
                 ->references('id_flight')->on('flights')
                 ->onDelete('cascade');
             $table->foreign('client_id')
-                ->references('id_client')->on('clients')
+                ->references('id')->on('users')
                 ->onDelete('cascade');
         });
     }

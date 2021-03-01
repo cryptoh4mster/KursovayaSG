@@ -62,7 +62,7 @@
 
             @auth
                 <a href="{{route('cabinet',['id'=>Auth::user()->id])}}"  type="button" class="btn btn-primary over">
-                    {{ Auth::user()->name }}
+                    {{ Auth::user()->firstname_client }}
                 </a>
                 <a href="{{ route('get-logout')}}" type="button" class="btn btn-primary over">
                     Выйти

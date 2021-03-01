@@ -7,6 +7,7 @@ use App\Flight;
 use App\Reserve;
 use App\ReserveService;
 use App\Service;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\UploadedFile;
@@ -40,7 +41,7 @@ class MainController extends Controller
     }
 
     public function client() {
-        $client = new Client();
+        $client = new User();
         $reserve=new Reserve();
         $flight=new Flight();
         return view('clients', ['client' => $client->all(),'reserve'=>$reserve->all(),'flight'=>$flight->all()]);
@@ -171,24 +172,40 @@ class MainController extends Controller
     }
 
     public function clientDelete($id){
-        $client = Client::where('id_client', $id)->first();
-        $client->delete();
-        $client = new Client();
+//        $client = Client::where('id_client', $id)->first();
+//        $client->delete();
+//        $client = new Client();
+//        $reserve=new Reserve();
+//        return redirect()->route('clients',['client' => $client->all(),'reserve'=>$reserve->all()]);
+        $user=User::where('id',$id)->first();
+        $user->delete();
+        $user=new User();
         $reserve=new Reserve();
-        return redirect()->route('clients',['client' => $client->all(),'reserve'=>$reserve->all()]);
+        return redirect()->route('clients',['client'=>$user->all(),'reserve'=>$reserve->all()]);
     }
     public function clientEdit($id){
-        $client=Client::get()->where('id_client',$id);
+//        $client=Client::get()->where('id_client',$id);
+//        return view('clientEdit',compact('client'));
+        $client=User::get()->where('id',$id);
         return view('clientEdit',compact('client'));
     }
     public function clientEditProcess(Request $request){
-        $client = Client::where('id_client', $request->id_client)->first();
-        $client->lastname_client=$request->lastname_client;
-        $client->firstname_client=$request->firstname_client;
-        $client->surname_client=$request->surname_client;
-        $client->sex_client=$request->sex_client;
-        $client->phone_client=$request->phone_client;
-        $client->save();
+//        $client = Client::where('id_client', $request->id_client)->first();
+//        $client->lastname_client=$request->lastname_client;
+//        $client->firstname_client=$request->firstname_client;
+//        $client->surname_client=$request->surname_client;
+//        $client->sex_client=$request->sex_client;
+//        $client->phone_client=$request->phone_client;
+//        $client->save();
+//        $query="Вы успешно отредактировали данные клиента";
+//        return view('accessClientEdit',compact('query'));
+        $user=User::where('id',$request->id_client)->first();
+        $user->lastname_client=$request->lastname_client;
+        $user->firstname_client=$request->firstname_client;
+        $user->surname_client=$request->surname_client;
+        $user->sex_client=$request->sex_client;
+        $user->phone_client=$request->phone_client;
+        $user->save();
         $query="Вы успешно отредактировали данные клиента";
         return view('accessClientEdit',compact('query'));
     }
@@ -221,8 +238,5 @@ class MainController extends Controller
         $service->save();
         $query="Вы успешно отредактировали услугу";
         return view('accessServiceEdit',compact('query'));
-    }
-    public function serviceDeleteProcess($id){
-
     }
 }

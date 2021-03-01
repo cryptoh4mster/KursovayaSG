@@ -30,7 +30,7 @@
                             <input type="text" name="phone_client" id="phone_client" value="{{ $cl->phone_client}}" class="form-control" style="height:40px;margin-bottom:20px">
                         </div>
                     </div>
-                    <input type="hidden" name="id_client" id="id_client" value="{{ $cl->id_client }}" class="form-control" style="border-color: #c5a689;">
+                    <input type="hidden" name="id_client" id="id_client" value="{{ $cl->id }}" class="form-control" style="border-color: #c5a689;">
                     <button type="submit" id="btn1" class="btn btn-outline-secondary" style="margin-bottom:40px; width:200px;height:50px;">Редактировать</button>
                 </div>
             </form>
