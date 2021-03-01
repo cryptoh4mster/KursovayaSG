@@ -1,4 +1,4 @@
-{{$a=1}}
+@php($a=1)
 @foreach($client as $cl)
 
     <div class="client_row" style="margin-bottom:10px;">
